@@ -1,3 +1,8 @@
 language: java
 jdk:
   - oraclejdk8
+before_install:
+  - chmod +x mvnw
+  - mysql -e 'CREATE DATABASE ponto_inteligente;'  
+before_script:
+  - echo "USE mysql;\nUPDATE user SET password=PASSWORD('admin') WHERE user='root';\nFLUSH PRIVILEGES;\n" | mysql -u root
