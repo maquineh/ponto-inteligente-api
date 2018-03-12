@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>ponto-inteligente-api</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Ponto eletronico web</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
